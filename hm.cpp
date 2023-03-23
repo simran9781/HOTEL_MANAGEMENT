@@ -102,3 +102,5 @@ int main() {
             case 2 :
             	find_room(rooms, n);
                 break;
+//hi
+                
