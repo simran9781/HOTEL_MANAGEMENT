@@ -80,3 +80,25 @@ void checkout_room(Room rooms[], int n) {
     strcpy(room->guest_name, "");
     room->occupied = 0;
 }
+// Main function
+int main() {
+    int n = 10;
+    Room rooms[n];
+    init_rooms(rooms, n);
+    int choice;
+    do {
+        printf("\n");
+        printf("1. Display all rooms\n");
+        printf("2. Book a room\n");
+        printf("3. Check out of a room\n");
+        printf("4. Exit\n");
+        printf("Enter choice: ");
+        scanf("%d", &choice);
+        printf("\n");
+        switch (choice) {
+            case 1:
+                display_rooms(rooms, n);
+                break;
+            case 2 :
+            	find_room(rooms, n);
+                break;
